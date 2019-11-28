@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu Nov 28 18:16:16 2019 as: nmap -sC -sV -oA nmap -p22,8009,8080 10.10.172.57 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -oA nmap -p22,8009,8080 10.10.172.57" start="1574945176" startstr="Thu Nov 28 18:16:16 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="22,8009,8080"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1574945177" endtime="1574945195"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.172.57" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.8" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 fc:05:24:81:98:7e:b8:db:05:92:a6:e7:8e:b0:21:11 (RSA)&#xa;  256 60:c8:40:ab:b0:09:84:3d:46:64:61:13:fa:bc:1f:be (ECDSA)&#xa;  256 b5:52:7e:9c:01:9b:98:0c:73:59:20:35:ee:23:f1:a5 (ED25519)"><table>
+<elem key="bits">2048.0</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDL+0hfJnh2z0jia21xVo/zOSRmzqE/qWyQv1G+8EJNXze3WPjXsC54jYeO0lp2SGq+sauzNvmWrHcrLKHtugMUQmkS9gD/p4zx4LjuG0WKYYeyLybs4WrTTmCU8PYGgmud9SwrDlEjX9AOEZgP/gj1FY+x+TfOtIT2OEE0Exvb86LhPj/AqdahABfCfxzHQ9ZyS6v4SMt/AvpJs6Dgady20CLxhYGY9yR+V4JnNl4jxwg2j64EGLx4vtCWNjwP+7ROkTmP6dzR7DxsH1h8Ko5C45HbTIjFzUmrJ1HMPZMo9ss0MsmeXPnZTmp5TxsxbLNJGSbDv7BS9gdCyTf0+Qq1</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">fc052481987eb8db0592a6e78eb02111</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBG6CiO2B7Uei2whKgUHjLmGY7dq1uZFhZ3wY5EWj5L7ylSj+bx5pwaiEgU/Velkp4ZWXM//thL6K1lAAPGLxHMM=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">60c840abb009843d46646113fabc1fbe</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIIwYtK4oCnQLSoBYAztlgcEsq8FLNL48LyxC2RfxC+33</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">b5527e9c019b980c73592035ee23f1a5</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ajp13" product="Apache Jserv" extrainfo="Protocol v1.3" method="probed" conf="10"/><script id="ajp-methods" output="Failed to get a valid response for the OPTION request"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache Tomcat" version="8.5.5" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat:8.5.5</cpe></service><script id="http-favicon" output="Apache Tomcat"/><script id="http-title" output="Apache Tomcat/8.5.5"><elem key="title">Apache Tomcat/8.5.5</elem>
+</script></port>
+</ports>
+<times srtt="242614" rttvar="103592" to="656982"/>
+</host>
+<runstats><finished time="1574945195" timestr="Thu Nov 28 18:16:35 2019" elapsed="19.54" summary="Nmap done at Thu Nov 28 18:16:35 2019; 1 IP address (1 host up) scanned in 19.54 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

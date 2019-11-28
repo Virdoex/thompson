@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Thu Nov 28 18:16:16 2019 as: nmap -sC -sV -oA nmap -p22,8009,8080 10.10.172.57
+Host: 10.10.172.57 ()	Status: Up
+Host: 10.10.172.57 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)/, 8009/open/tcp//ajp13//Apache Jserv (Protocol v1.3)/, 8080/open/tcp//http//Apache Tomcat 8.5.5/
+# Nmap done at Thu Nov 28 18:16:35 2019 -- 1 IP address (1 host up) scanned in 19.54 seconds
